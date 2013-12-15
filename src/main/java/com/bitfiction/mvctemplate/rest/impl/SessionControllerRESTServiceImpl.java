@@ -43,9 +43,6 @@ public class SessionControllerRESTServiceImpl implements SessionControllerRESTSe
 	
 	private final String SELECT_USER = "select u from User u where u.username = :user";
 	
-//	@Context
-//	private SecurityContext context;
-
 	public Response isLoggedIn() throws Exception {
 		Principal principal = httpRequest.getUserPrincipal();
 		if (principal == null) {
@@ -98,7 +95,7 @@ public class SessionControllerRESTServiceImpl implements SessionControllerRESTSe
 		
 		boolean isAdminMode = false;
 		
-		if (user.getRoles() != null) {
+		if (user!= null && user.getRoles() != null) {
 			for (Role role: user.getRoles()) {
 				if (role.getRolename().equalsIgnoreCase("admin")) {
 					isAdminMode = true;
