@@ -16,6 +16,7 @@
 		<web-resource-collection>
 			<web-resource-name>ExtjsMVCTemplateRealm</web-resource-name>
 			<url-pattern>/json/*</url-pattern>
+			<url-pattern>/rest/*</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
 			<role-name>user</role-name>
