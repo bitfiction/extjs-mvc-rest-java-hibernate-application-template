@@ -1,0 +1,17 @@
+{
+    "name": "bitfictionMvcTemplate",
+
+    "requires": [
+    ],
+
+    "id": "4a361d24-b4a5-48e0-8f59-79e8062218aa",
+    
+        
+    "indexHtmlPath": "index_template.xhtml",
+    
+    "css": [{
+            "path": "resources/css/app.css",
+            "update": "delta"
+        }
+    ]
+}

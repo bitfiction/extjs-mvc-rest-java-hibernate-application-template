@@ -1,0 +1,22 @@
+{
+	text: '.',
+	children: [{
+	    text:'Menu',
+	    id:'menu',
+	    leaf:false,
+		children: [{
+		    text:'Menu Item General',
+		    id:'menuItemGeneral',
+		    leaf:true
+		}, {
+		    text:'Menu Item #2',
+		    id:'menuItem2',
+		    leaf:true
+		}, {
+		    text:'Menu Item #3',
+		    id:'menuItem3',
+		    leaf:true
+		}
+		]
+	}]
+}

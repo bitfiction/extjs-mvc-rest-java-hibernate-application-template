@@ -1,0 +1,18 @@
+{
+	text: '.',
+	children: [{
+	    text:'Menu',
+	    id:'menu',
+	    leaf:false,
+		children: [{
+		    text:'Menu Item General',
+		    id:'menuItemGeneral',
+		    leaf:true
+		}, {
+		    text:'Menu Item Admin #1',
+		    id:'menuItemAdmin1',
+		    leaf:true
+		}
+		]
+	}]
+}
