@@ -9,6 +9,18 @@
 		<param-name>resteasy.providers</param-name>
 		<param-value>com.bitfiction.mvctemplate.util.DefaultExceptionHandler</param-value>
 	</context-param>
+	<security-role>
+		<role-name>user</role-name>
+	</security-role>
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>ExtjsMVCTemplateRealm</web-resource-name>
+			<url-pattern>/json/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>user</role-name>
+		</auth-constraint>
+	</security-constraint>
 	<filter>
 		<filter-name>UTF8Filter</filter-name>
 		<filter-class>com.bitfiction.mvctemplate.util.UTF8Filter</filter-class>
