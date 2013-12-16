@@ -8,8 +8,9 @@ insert into OneToOneEntityEditableByAdmin (id, exampleString) values (1, 'Exampl
 insert into BaseEntity (id, oneToOneEntityId, oneToOneEntityEditableByAdminId) values (1, 1, 1) 
 
 insert into user (id, username, password, baseEntityId) values (1, 'captain', MD5('444'), 1) 
+insert into user (id, username, password, baseEntityId) values (2, 'john', MD5('444'), 1) 
 insert into userrole (users_id, users_username, roles_id) values (1, 'captain', 1)
 insert into userrole (users_id, users_username, roles_id) values (1, 'captain', 2)
-
+insert into userrole (users_id, users_username, roles_id) values (2, 'john', 1)
 
 
