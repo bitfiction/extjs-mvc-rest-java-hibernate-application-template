@@ -458,12 +458,13 @@
             <security-domains>
                 <security-domain name="other" cache-type="default">
                     <authentication>
-                        <login-module code="Remoting" flag="optional">
-		                    <module-option name="password-stacking" value="useFirstPass"/>
-		                </login-module>
-		                <login-module code="RealmDirect" flag="required">
-		                    <module-option name="password-stacking" value="useFirstPass"/>
-		                </login-module>
+                    	<login-module code="UsersRoles" flag="required"/>
+<!--                         <login-module code="Remoting" flag="optional"> -->
+<!-- 		                    <module-option name="password-stacking" value="useFirstPass"/> -->
+<!-- 		                </login-module> -->
+<!-- 		                <login-module code="RealmDirect" flag="required"> -->
+<!-- 		                    <module-option name="password-stacking" value="useFirstPass"/> -->
+<!-- 		                </login-module> -->
                     </authentication>
                 </security-domain>
                 <security-domain name="jboss-web-policy" cache-type="default">
@@ -486,7 +487,8 @@
                 </security-domain>
                 <security-domain name="ExtjsMVCTemplateRealm">
                     <authentication>
-                        <login-module code="org.jboss.security.auth.spi.DatabaseServerLoginModule" flag="required">
+                        <login-module code="Database" flag="required">
+<!-- 						<login-module code="org.jboss.security.auth.spi.DatabaseServerLoginModule" flag="required"> -->
                             <module-option name="dsJndiName" value="java:jboss/datasources/MysqlDS"/>
                             <module-option name="principalsQuery" value="select password from user where username=?"/>
                             <module-option name="rolesQuery" value="select rolename, 'Roles' from role, userrole, user where user.username=? and userrole.roles_id = role.id"/>

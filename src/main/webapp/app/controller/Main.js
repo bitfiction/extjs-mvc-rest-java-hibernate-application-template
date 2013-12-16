@@ -94,7 +94,7 @@ Ext.define('bitfictionMvcTemplate.controller.Main', {
 	},
 	
 	onLogout: function() {
-		window.location.href = "http://" + window.location.host + "/mvctemplate/logout";
+		window.location.href = "http://" + window.location.host + "/logout";
 	},
 	
 	loadMenu: function() {

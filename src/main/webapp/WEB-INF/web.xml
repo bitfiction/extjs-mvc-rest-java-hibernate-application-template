@@ -29,14 +29,14 @@
 		</auth-constraint>
 	</security-constraint>
 
-	<login-config>
-		<auth-method>FORM</auth-method>
-		<realm-name>ExtjsMVCTemplateRealm</realm-name>
-		<form-login-config>
-			<form-login-page>/index.jsf</form-login-page>
-			<form-error-page>/json/error.json</form-error-page>
-		</form-login-config>
-	</login-config>
+<!-- 	<login-config> -->
+<!-- 		<auth-method>FORM</auth-method> -->
+<!-- 		<realm-name>ExtjsMVCTemplateRealm</realm-name> -->
+<!-- 		<form-login-config> -->
+<!-- 			<form-login-page>/index.jsf</form-login-page> -->
+<!-- 			<form-error-page>/json/error.json</form-error-page> -->
+<!-- 		</form-login-config> -->
+<!-- 	</login-config> -->
 
 	<filter>
 		<filter-name>UTF8Filter</filter-name>

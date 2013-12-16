@@ -34,6 +34,7 @@ public class LoginServlet extends HttpServlet {
 			if (request.getUserPrincipal() != null) {
 	            request.logout();
 	        }
+			request.getSession();
 	        request.login(username, password);
 			
 	        response.setContentType("application/json");
