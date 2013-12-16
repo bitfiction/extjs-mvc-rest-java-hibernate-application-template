@@ -34,7 +34,7 @@ Ext.define('bitfictionMvcTemplate.controller.Main', {
         	Ext.create('bitfictionMvcTemplate.view.BrowserCheck');
     	} else {
 	        Ext.Ajax.request({
-			    url: 'rest/user/loggedin',
+			    url: 'checklogin',
 			    success: function(response) {
 					var data = Ext.decode(response.responseText);
 					if (data.isLoggedIn == true) {
