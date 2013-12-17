@@ -5,7 +5,6 @@ Ext.define('bitfictionMvcTemplate.controller.Main', {
         'Ext.tab.Panel',
         'Ext.layout.container.Card',
         'Ext.ux.data.PagingMemoryProxy',
-        'bitfictionMvcTemplate.view.BrowserCheck',
         'bitfictionMvcTemplate.view.Viewport',
         'bitfictionMvcTemplate.view.LoginForm',
         'bitfictionMvcTemplate.view.LoginViewport',

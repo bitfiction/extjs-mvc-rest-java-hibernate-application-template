@@ -18,7 +18,7 @@ Ext.define('bitfictionMvcTemplate.view.grid.OneToManyEntityEditable', {
 				header : 'Example Double',
 				dataIndex : 'exampleDouble',
 				editor : {
-					xtype : 'numberfield',
+					xtype : 'numberfield'
 				}
 			}, {
 				header : 'Example Int',

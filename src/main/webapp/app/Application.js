@@ -4,7 +4,6 @@ Ext.define('bitfictionMvcTemplate.Application', {
     extend: 'Ext.app.Application',
 
     views: [
-        'bitfictionMvcTemplate.view.BrowserCheck',
         'bitfictionMvcTemplate.view.LoginForm',
         'bitfictionMvcTemplate.view.grid.OneToManyEntityEditable',
         'bitfictionMvcTemplate.view.Header',
