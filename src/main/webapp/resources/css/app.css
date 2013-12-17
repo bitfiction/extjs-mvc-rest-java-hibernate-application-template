@@ -70,18 +70,3 @@
 #msg-div .msg p {
     margin: 0;
 }
-
-/* File upload message box */ 
-.x-message-box .ext-mb-download {
-    background: url(../img/download.gif) no-repeat scroll 6px 0px transparent;
-    height: 52px!important;
-}
-
-.x-grid-row-summary .x-grid-cell-inner {
-    font-weight: bold;
-}
-
-.highlighted-row .x-grid-cell { 
-    background-color: #e2ffe2; 
-    color: #090; 
-}

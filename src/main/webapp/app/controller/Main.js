@@ -29,26 +29,21 @@ Ext.define('bitfictionMvcTemplate.controller.Main', {
     	
     	var me = this;
     	
-    	if (!Ext.isGecko && !Ext.isChrome) {
-        //if (!Ext.isIE) {
-        	Ext.create('bitfictionMvcTemplate.view.BrowserCheck');
-    	} else {
-	        Ext.Ajax.request({
-			    url: 'checklogin',
-			    success: function(response) {
-					var data = Ext.decode(response.responseText);
-					if (data.isLoggedIn == true) {
-						// create main UI
-						Ext.create('bitfictionMvcTemplate.view.Viewport');
-						me.initViewport();
-					} else {
-						// create login form
-						Ext.create('bitfictionMvcTemplate.view.LoginViewport');
-						Ext.getCmp('login-form-panel-id').body.setStyle('background','#DFEAF2');
-					}
-			    }
-		    });
-		}
+        Ext.Ajax.request({
+		    url: 'checklogin',
+		    success: function(response) {
+				var data = Ext.decode(response.responseText);
+				if (data.isLoggedIn == true) {
+					// create main UI
+					Ext.create('bitfictionMvcTemplate.view.Viewport');
+					me.initViewport();
+				} else {
+					// create login form
+					Ext.create('bitfictionMvcTemplate.view.LoginViewport');
+					Ext.getCmp('login-form-panel-id').body.setStyle('background','#DFEAF2');
+				}
+		    }
+	    });
     	  
     	this.control({
 		   "loginform": {

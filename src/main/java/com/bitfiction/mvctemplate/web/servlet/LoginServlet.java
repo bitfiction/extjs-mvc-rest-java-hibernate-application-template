@@ -34,6 +34,9 @@ public class LoginServlet extends HttpServlet {
 			if (request.getUserPrincipal() != null) {
 	            request.logout();
 	        }
+			
+			// nasty work-around for Catalina AuthenticatorBase to be able to 
+		    // change/create the session cookie 
 			request.getSession();
 	        request.login(username, password);
 			
