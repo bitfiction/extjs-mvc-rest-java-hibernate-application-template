@@ -16,7 +16,7 @@ import com.bitfiction.mvctemplate.model.BaseEntity;
 import com.bitfiction.mvctemplate.model.OneToOneEntityEditableByAdmin;
 
 @Stateless
-@RolesAllowed({ "user" })
+@RolesAllowed({ "admin" })
 @SecurityDomain("ExtjsMVCTemplateRealm")
 public class OneToOneEntityEditableByAdminServiceImpl implements OneToOneEntityEditableByAdminService {
 

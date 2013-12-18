@@ -15,6 +15,8 @@ import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.codehaus.jackson.annotate.JsonIgnore;
+
 @Entity
 @Table(name = "BaseEntity")
 @SequenceGenerator(name="seqBaseEntity", initialValue=10, allocationSize=100)
@@ -23,6 +25,12 @@ public class BaseEntity {
    // Avoid org.hibernate.InstantiationException: No default constructor for entity	
    public BaseEntity() {
 	   super();
+   }
+   
+   public BaseEntity(
+		   OneToOneEntity oneToOneEntity, 
+		   OneToOneEntityEditableByAdmin OneToOneEntityEditableByAdmin) {
+		this(oneToOneEntity, OneToOneEntityEditableByAdmin, null);
    }
 	
    public BaseEntity(
@@ -48,6 +56,7 @@ public class BaseEntity {
    @JoinColumn(name="oneToOneEntityEditableByAdminId", referencedColumnName="id")
    private OneToOneEntityEditableByAdmin OneToOneEntityEditableByAdmin;
    
+   @JsonIgnore
    @OneToMany(mappedBy="baseEntity", fetch=FetchType.LAZY)
    private Set<OneToManyEntity> oneToManyEntities = new HashSet<OneToManyEntity>();
 	

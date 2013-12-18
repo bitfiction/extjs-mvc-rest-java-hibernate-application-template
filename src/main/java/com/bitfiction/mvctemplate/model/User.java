@@ -18,6 +18,8 @@ import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.codehaus.jackson.annotate.JsonIgnore;
+
 @Entity
 @Table(name = "user")
 @SequenceGenerator(name="seqUser", initialValue=10, allocationSize=100)
@@ -55,10 +57,12 @@ public class User implements Serializable {
    @Column(name="password", length = 127)
    private String password;
    
+   @JsonIgnore
    @OneToOne(fetch=FetchType.EAGER, optional=true)
    @JoinColumn(name="baseEntityId", referencedColumnName="id")
    private BaseEntity baseEntity;
 
+   @JsonIgnore
    @ManyToMany(fetch=FetchType.EAGER, cascade = {CascadeType.ALL})
    @JoinTable(name="userrole",
               joinColumns={@JoinColumn(referencedColumnName="id"),

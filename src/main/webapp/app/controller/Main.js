@@ -88,7 +88,9 @@ Ext.define('bitfictionMvcTemplate.controller.Main', {
 	},
 	
 	onLogout: function() {
-		window.location.href = "http://" + window.location.host + "/logout";
+		var currentURL = document.URL;
+		var logoutURL = currentURL.replace("index.jsf","logout");
+		window.location.href = logoutURL;
 	},
 	
 	loadMenu: function() {
@@ -179,13 +181,9 @@ Ext.define('bitfictionMvcTemplate.controller.Main', {
 				me.loadMenu();
 				
 				if (bitfictionMvcTemplate.controller.Main.adminMode) { // admin mode loading
-					var oneToOneEntityEditableByAdminStore = new bitfictionMvcTemplate.store.OneToOneEntityEditableByAdmin({
-						id: 'oneToOneEntityEditableByAdminStore',
-					});
-					Ext.StoreManager.lookup('oneToOneEntityEditableByAdminStore').load({
+					Ext.StoreManager.lookup('userInfoStore').load({
 						callback : function(records, options, success) {
 					  		if (success) {
-					   			Ext.getCmp('menuItemAdmin1-panel').loadRecord(records[0]);
 					   			Ext.MessageBox.hide();
 			   					Ext.notifications.msg('Welcome Admin', 'Extjs 4 MVC Template is ready!');
 					   		}
@@ -322,7 +320,7 @@ Ext.define('bitfictionMvcTemplate.controller.Main', {
 						title : 'Tab Panel',
 						activeTab : 0,
 						style : 'background-color:#dfe8f6; ',
-							items : [{
+						items : [{
 							title : 'One To Many Entity ',
 							autoScroll : true,
 							items : [{
@@ -363,25 +361,14 @@ Ext.define('bitfictionMvcTemplate.controller.Main', {
 						autoScroll : true,
 						style : 'background-color:#dfe8f6; ',
 						items : [{
-							title : 'One To One Entity Editable By Admin',
-							padding : 10,
+							title : 'Users',
+							autoScroll : true,
 							items : [{
-								xtype: 'oneToOneEntityEditableByAdmin-fieldcontainer',
-								name: 'admin-entity-fieldcontainer'
-							}, {
-								xtype : 'button',
-								scale : 'large',
-								text : 'Save',
-								handler : function(button, e) {
-									var theForm = button.up('form[name=menuItemAdmin1-panel]').getForm();
-									var record = theForm.getRecord();
-									var errors = record.validate();
-									var success = errors.isValid();
-									
-									if (success) {
-										theForm.updateRecord(record);
-									}
-								}
+								xtype : 'userInfo-grid',
+								id: 'userInfoGrid',
+								store : new bitfictionMvcTemplate.store.UserInfo({
+									id : 'userInfoStore'
+								})
 							}]
 						}]
 					}]

@@ -6,6 +6,7 @@ Ext.define('bitfictionMvcTemplate.Application', {
     views: [
         'bitfictionMvcTemplate.view.LoginForm',
         'bitfictionMvcTemplate.view.grid.OneToManyEntityEditable',
+        'bitfictionMvcTemplate.view.grid.UserInfo',
         'bitfictionMvcTemplate.view.Header',
         'bitfictionMvcTemplate.view.HeaderBulk',
         'bitfictionMvcTemplate.view.Main',
@@ -23,6 +24,7 @@ Ext.define('bitfictionMvcTemplate.Application', {
         'bitfictionMvcTemplate.store.OneToManyEntity',
         'bitfictionMvcTemplate.store.MenuStore',
         'bitfictionMvcTemplate.store.OneToOneEntity',
-        'bitfictionMvcTemplate.store.OneToOneEntityEditableByAdmin'
+        'bitfictionMvcTemplate.store.OneToOneEntityEditableByAdmin',
+        'bitfictionMvcTemplate.store.UserInfo'
     ]
 });

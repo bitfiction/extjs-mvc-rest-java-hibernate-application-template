@@ -174,7 +174,7 @@
 				<hibernate.show_sql>true</hibernate.show_sql>
 			</properties>
 			<build>
-				<finalName>mvctemplate</finalName>
+				<finalName>${project.name}</finalName>
 				<plugins>
 					<plugin>
 						<artifactId>maven-war-plugin</artifactId>
@@ -190,6 +190,37 @@
 							<outputDirectory>deployments</outputDirectory>
 							<warName>ROOT</warName>
 						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		
+		<profile>
+			<id>local-development</id>
+			<properties>
+				<hibernate.method>create-drop</hibernate.method>
+				<hibernate.show_sql>true</hibernate.show_sql>
+			</properties>
+			<build>
+				<finalName>${project.name}</finalName>
+				<plugins>
+					<plugin>
+						<artifactId>maven-war-plugin</artifactId>
+						<version>2.4</version>
+						<configuration>
+							<warSourceExcludes>
+								ext/builds/**/*,
+								ext/packages/*locale*/**/*,
+								sass/**/*,
+								*.xml,
+								*.rb,
+							</warSourceExcludes>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.jboss.as.plugins</groupId>
+						<artifactId>jboss-as-maven-plugin</artifactId>
+						<version>7.4.Final</version>
 					</plugin>
 				</plugins>
 			</build>
