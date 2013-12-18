@@ -262,6 +262,20 @@ Ext.define('bitfictionMvcTemplate.controller.Main', {
 									html: '<b>10.1.2014</b> Regular  news title.'
 								}]
 							}]
+					 	}, {
+							xtype : 'fieldset',
+							title : '<b>Info</b>',
+							width : 500,
+							items : [{
+								xtype: 'container',
+								padding: '10 0 15 10',
+								items: [{
+									xtype: 'label',
+									html: "The source code is available at " + 
+										  "<a hreaf='https://github.com/bitfiction/extjs-mvc-rest-java-hibernate-application-template'>github</a>. " +
+										  "For more info checkout the <a hreaf='http://www.bitfiction.com/blog/'>blog</a>."
+								}]
+							}]
 					 	}]
 					}]	
 				},
@@ -278,7 +292,6 @@ Ext.define('bitfictionMvcTemplate.controller.Main', {
 						style : 'background-color:#dfe8f6; ',
 						items : [{
 							title : 'One To One Entity',
-							padding : 10,
 							items : [{
 								xtype: 'oneToOneEntity-fieldcontainer',
 								name: 'user-entity-fieldcontainer'
@@ -352,7 +365,6 @@ Ext.define('bitfictionMvcTemplate.controller.Main', {
 						style : 'background-color:#dfe8f6; ',
 						items : [{
 							title : 'One To One Entity Editable By Admin',
-							padding : 10,
 							items : [{
 								xtype: 'oneToOneEntityEditableByAdmin-fieldcontainer',
 								name: 'admin-entity-fieldcontainer'

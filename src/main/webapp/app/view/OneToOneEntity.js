@@ -10,6 +10,7 @@ Ext.define('bitfictionMvcTemplate.view.OneToOneEntity', {
 				xtype : 'textfield',
 				name: 'exampleString',
 				fieldLabel : 'Example String',
+				size: 30,
 				msgTarget: 'qtip'
 			}]
 		});

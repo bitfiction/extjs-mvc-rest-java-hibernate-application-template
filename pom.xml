@@ -76,7 +76,7 @@
 		<dependency>
 			<groupId>org.jboss.spec.javax.ws.rs</groupId>
 			<artifactId>jboss-jaxrs-api_1.1_spec</artifactId>
-			<version>1.0.0.Final</version>
+<!-- 			<version>1.0.0.Final</version> -->
 			<scope>provided</scope>
 		</dependency>
 
@@ -104,7 +104,7 @@
 		<dependency>
 			<groupId>javax.enterprise</groupId>
 			<artifactId>cdi-api</artifactId>
-			<version>1.0-SP4</version>
+<!-- 			<version>1.0-SP4</version> -->
 			<scope>provided</scope>
 			<exclusions>
 				<exclusion>
@@ -121,7 +121,7 @@
 		<dependency>
 			<groupId>org.jboss.spec.javax.ejb</groupId>
 			<artifactId>jboss-ejb-api_3.1_spec</artifactId>
-			<version>1.0.1.Final</version>
+<!-- 			<version>1.0.1.Final</version> -->
 			<scope>provided</scope>
 		</dependency>
 

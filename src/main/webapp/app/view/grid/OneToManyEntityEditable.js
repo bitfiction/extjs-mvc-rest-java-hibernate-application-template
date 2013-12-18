@@ -11,25 +11,29 @@ Ext.define('bitfictionMvcTemplate.view.grid.OneToManyEntityEditable', {
 			columns : [{
 				header : 'Example String',
 				dataIndex : 'exampleString',
+				flex: 1,
 				editor : {
 					allowBlank : true
 				}
 			}, {
 				header : 'Example Double',
 				dataIndex : 'exampleDouble',
+				flex: 1,
 				editor : {
 					xtype : 'numberfield'
 				}
 			}, {
 				header : 'Example Int',
 				dataIndex : 'exampleInt',
+				flex: 1,
 				editor : {
 					xtype : 'numberfield'
 				}
 			}, {
 				xtype : 'checkcolumn',
 				header : 'Example Bool',
-				dataIndex : 'exampleBool'
+				dataIndex : 'exampleBool',
+				flex: 1
 			}, {
 				xtype : 'actioncolumn',
 				width : 25,
