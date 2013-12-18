@@ -182,7 +182,6 @@
 						<configuration>
 							<warSourceExcludes>
 								ext/builds/**/*,
-								ext/*all*,
 								ext/packages/*locale*/**/*,
 								sass/**/*,
 								*.xml,
