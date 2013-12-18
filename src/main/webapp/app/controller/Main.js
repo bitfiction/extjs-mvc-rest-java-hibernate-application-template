@@ -272,8 +272,8 @@ Ext.define('bitfictionMvcTemplate.controller.Main', {
 								items: [{
 									xtype: 'label',
 									html: "The source code is available at " + 
-										  "<a hreaf='https://github.com/bitfiction/extjs-mvc-rest-java-hibernate-application-template'>github</a>. " +
-										  "For more info checkout the <a hreaf='http://www.bitfiction.com/blog/'>blog</a>."
+										  "<a href='https://github.com/bitfiction/extjs-mvc-rest-java-hibernate-application-template'>github</a>. " +
+										  "For more info checkout the <a href='http://www.bitfiction.com/blog/'>blog</a>."
 								}]
 							}]
 					 	}]
@@ -283,7 +283,6 @@ Ext.define('bitfictionMvcTemplate.controller.Main', {
 					id : 'menuItem2-panel',
 					name : 'menuItem2-panel',
 					xtype : 'form',
-					autoScroll : true,
 					items : [{
 						xtype : 'tabpanel',
 						title : 'Tab Panel',
@@ -292,6 +291,7 @@ Ext.define('bitfictionMvcTemplate.controller.Main', {
 						style : 'background-color:#dfe8f6; ',
 						items : [{
 							title : 'One To One Entity',
+							padding : 10,
 							items : [{
 								xtype: 'oneToOneEntity-fieldcontainer',
 								name: 'user-entity-fieldcontainer'
@@ -356,7 +356,6 @@ Ext.define('bitfictionMvcTemplate.controller.Main', {
 					id : 'menuItemAdmin1-panel',
 					name : 'menuItemAdmin1-panel',
 					xtype : 'form',
-					autoScroll : true,
 					items : [{
 						xtype : 'tabpanel',
 						title : 'Tab Panel',
@@ -365,6 +364,7 @@ Ext.define('bitfictionMvcTemplate.controller.Main', {
 						style : 'background-color:#dfe8f6; ',
 						items : [{
 							title : 'One To One Entity Editable By Admin',
+							padding : 10,
 							items : [{
 								xtype: 'oneToOneEntityEditableByAdmin-fieldcontainer',
 								name: 'admin-entity-fieldcontainer'
