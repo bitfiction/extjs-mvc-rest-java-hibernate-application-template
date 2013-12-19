@@ -48,9 +48,9 @@ _Following steps are required to run your own application instance in openshift 
 
 2. _Clone this repo and add your openshift repo as remote repository_
 
-> $ git clone <bitbucket-repo-url>
+> $ git clone _<https://github.com/bitfiction/extjs-mvc-rest-java-hibernate-application-template.git>_
 
-> $ git remote add openshift -f <openshift-git-repo-url>
+> $ git remote add openshift -f _openshift-git-repo-url_
 
 3. _Merge this repo to your openshift repository_
 
