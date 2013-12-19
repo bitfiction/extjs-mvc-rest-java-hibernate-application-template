@@ -43,11 +43,13 @@ _Following steps are required to run your own application instance in openshift 
 1. _Create [openshift](https://www.openshift.com/developers/java) account and application_
 
 > $ rhc app create MyAppName jbossas-7
+
 > $ rhc cartridge add mysql-5.1 -a MyAppName
 
 2. _Clone this repo and add your openshift repo as remote repository_
 
 > $ git clone <bitbucket-repo-url>
+
 > $ git remote add openshift -f <openshift-git-repo-url>
 
 3. _Merge this repo to your openshift repository_
