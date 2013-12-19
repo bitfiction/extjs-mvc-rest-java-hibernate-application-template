@@ -5,10 +5,15 @@ _RIA application template runnable on openshift._
 [Code in action on openshift cloud](http://mvctemplate-bitfiction.rhcloud.com)
 
 _Example users_
+
 1. `username:john password:123`
+
 2. `username:mark password:456`
+
 3. `username:peter password:789`
+
 _Admin user_
+
 1. `username:captain password:444`
 
 ## Project Info
@@ -36,14 +41,21 @@ _Tested on:_
 _Following steps are required to run your own application instance in openshift cloud_ 
 
 1. _Create [openshift](https://www.openshift.com/developers/java) account and application_
+
 > $ rhc app create MyAppName jbossas-7
 > $ rhc cartridge add mysql-5.1 -a MyAppName
+
 2. _Clone this repo and add your openshift repo as remote repository_
+
 > $ git clone <bitbucket-repo-url>
 > $ git remote add openshift -f <openshift-git-repo-url>
+
 3. _Merge this repo to your openshift repository_
+
 > $ git merge openshift/master -s recursive -X ours
+
 4. _Push merged repo; this should trigger build process and make the app available at http://MyAppName-MyAccountName.rhcloud.com_
+
 > $ git push openshift HEAD
 
 ## License
