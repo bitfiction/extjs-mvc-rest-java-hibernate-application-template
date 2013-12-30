@@ -34,7 +34,7 @@ _Based on technologies:_
 
 _Tested on:_
 - _[openshift jboss AS 7.1](http://mvctemplate-bitfiction.rhcloud.com)_
-- _locally on jboss EAP 6_
+- _[locally on jboss EAP 6.x or jboss AS 7.x](https://github.com/bitfiction/extjs-mvc-rest-java-hibernate-application-template/issues/1)_
 
 ## Project Setup
 
