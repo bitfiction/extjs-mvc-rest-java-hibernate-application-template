@@ -828,75 +828,28 @@ Ext.ClassManager.addNameAlternateMappings({
   "bitfictionMvcTemplate.Application": [],
   "bitfictionMvcTemplate.controller.Main": [],
   "bitfictionMvcTemplate.controller.Util": [],
-  "bitfictionMvcTemplate.model.Building": [],
-  "bitfictionMvcTemplate.model.Doc": [],
-  "bitfictionMvcTemplate.model.Document": [],
+  "bitfictionMvcTemplate.model.BaseEntity": [],
   "bitfictionMvcTemplate.model.OneToManyEntity": [],
-  "bitfictionMvcTemplate.model.Master": [],
-  "bitfictionMvcTemplate.model.OtherArea": [],
-  "bitfictionMvcTemplate.model.OtherRoom": [],
   "bitfictionMvcTemplate.model.OneToOneEntity": [],
   "bitfictionMvcTemplate.model.OneToOneEntityEditableByAdmin": [],
-  "bitfictionMvcTemplate.model.AggregatedEntity": [],
-  "bitfictionMvcTemplate.model.Specialization": [],
-  "bitfictionMvcTemplate.model.SpecializationDefinition": [],
-  "bitfictionMvcTemplate.model.SpecializationInfo": [],
-  "bitfictionMvcTemplate.model.Teacher": [],
-  "bitfictionMvcTemplate.store.Buildings": [],
-  "bitfictionMvcTemplate.store.Docs": [],
-  "bitfictionMvcTemplate.store.DocumentsStore": [],
-  "bitfictionMvcTemplate.store.OneToManyEntitys": [],
-  "bitfictionMvcTemplate.store.Masters": [],
+  "bitfictionMvcTemplate.model.User": [],
+  "bitfictionMvcTemplate.model.UserInfo": [],
   "bitfictionMvcTemplate.store.MenuStore": [],
-  "bitfictionMvcTemplate.store.MetodicsStore": [],
-  "bitfictionMvcTemplate.store.NormativesStore": [],
-  "bitfictionMvcTemplate.store.OtherAreas": [],
-  "bitfictionMvcTemplate.store.OtherRooms": [],
+  "bitfictionMvcTemplate.store.OneToManyEntity": [],
   "bitfictionMvcTemplate.store.OneToOneEntity": [],
   "bitfictionMvcTemplate.store.OneToOneEntityEditableByAdmin": [],
-  "bitfictionMvcTemplate.store.AggregatedEntitys": [],
-  "bitfictionMvcTemplate.store.Specializations": [],
-  "bitfictionMvcTemplate.store.SpecializationsDefinitions": [],
-  "bitfictionMvcTemplate.store.SpecializationsInfos": [],
-  "bitfictionMvcTemplate.store.StsoDocumentsStore": [],
-  "bitfictionMvcTemplate.store.Teachers": [],
-  "bitfictionMvcTemplate.store.TeachersStore": [],
-  "bitfictionMvcTemplate.store.proxy.CustomAjax": [],
-  "bitfictionMvcTemplate.view.BrowserCheck": [],
-  "bitfictionMvcTemplate.view.DocumentationData": [],
-  "bitfictionMvcTemplate.view.EconomicData": [],
-  "bitfictionMvcTemplate.view.EmployeesData": [],
-  "bitfictionMvcTemplate.view.EnergyData": [],
-  "bitfictionMvcTemplate.view.FileUploadForm": [],
+  "bitfictionMvcTemplate.store.UserInfo": [],
   "bitfictionMvcTemplate.view.Header": [],
   "bitfictionMvcTemplate.view.HeaderBulk": [],
   "bitfictionMvcTemplate.view.LoginForm": [],
   "bitfictionMvcTemplate.view.LoginViewport": [],
   "bitfictionMvcTemplate.view.Main": [],
   "bitfictionMvcTemplate.view.Menu": [],
-  "bitfictionMvcTemplate.view.OtherData": [],
-  "bitfictionMvcTemplate.view.PersonData": [],
-  "bitfictionMvcTemplate.view.RentData": [],
   "bitfictionMvcTemplate.view.OneToOneEntity": [],
   "bitfictionMvcTemplate.view.OneToOneEntityEditableByAdmin": [],
-  "bitfictionMvcTemplate.view.StudentsData": [],
-  "bitfictionMvcTemplate.view.TechnicalData": [],
   "bitfictionMvcTemplate.view.Viewport": [],
-  "bitfictionMvcTemplate.view.combo.Cooperation": [],
-  "bitfictionMvcTemplate.view.combo.Qualification": [],
-  "bitfictionMvcTemplate.view.combo.Type": [],
-  "bitfictionMvcTemplate.view.grid.BuildingsEditable": [],
-  "bitfictionMvcTemplate.view.grid.Docs": [],
-  "bitfictionMvcTemplate.view.grid.Documents": [],
-  "bitfictionMvcTemplate.view.grid.OneToManyEntitysEditable": [],
-  "bitfictionMvcTemplate.view.grid.MastersEditable": [],
-  "bitfictionMvcTemplate.view.grid.OtherAreasEditable": [],
-  "bitfictionMvcTemplate.view.grid.OtherRoomsEditable": [],
-  "bitfictionMvcTemplate.view.grid.AggregatedEntitys": [],
-  "bitfictionMvcTemplate.view.grid.SpecializationsDefinitions": [],
-  "bitfictionMvcTemplate.view.grid.SpecializationsEditable": [],
-  "bitfictionMvcTemplate.view.grid.SpecializationsInfos": [],
-  "bitfictionMvcTemplate.view.grid.TeachersEditable": []
+  "bitfictionMvcTemplate.view.grid.OneToManyEntityEditable": [],
+  "bitfictionMvcTemplate.view.grid.UserInfo": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1887,97 +1840,26 @@ Ext.ClassManager.addNameAliasMappings({
   "bitfictionMvcTemplate.Application": [],
   "bitfictionMvcTemplate.controller.Main": [],
   "bitfictionMvcTemplate.controller.Util": [],
-  "bitfictionMvcTemplate.model.Building": [],
-  "bitfictionMvcTemplate.model.Doc": [],
-  "bitfictionMvcTemplate.model.Document": [],
+  "bitfictionMvcTemplate.model.BaseEntity": [],
   "bitfictionMvcTemplate.model.OneToManyEntity": [],
-  "bitfictionMvcTemplate.model.Master": [],
-  "bitfictionMvcTemplate.model.OtherArea": [],
-  "bitfictionMvcTemplate.model.OtherRoom": [],
   "bitfictionMvcTemplate.model.OneToOneEntity": [],
   "bitfictionMvcTemplate.model.OneToOneEntityEditableByAdmin": [],
-  "bitfictionMvcTemplate.model.AggregatedEntity": [],
-  "bitfictionMvcTemplate.model.Specialization": [],
-  "bitfictionMvcTemplate.model.SpecializationDefinition": [],
-  "bitfictionMvcTemplate.model.SpecializationInfo": [],
-  "bitfictionMvcTemplate.model.Teacher": [],
-  "bitfictionMvcTemplate.store.Buildings": [
-    "widget.buildings-store"
-  ],
-  "bitfictionMvcTemplate.store.Docs": [
-    "widget.docs-store"
-  ],
-  "bitfictionMvcTemplate.store.DocumentsStore": [
-    "widget.documents-store"
-  ],
-  "bitfictionMvcTemplate.store.OneToManyEntitys": [
-    "widget.lecture-rooms-store"
-  ],
-  "bitfictionMvcTemplate.store.Masters": [
-    "widget.masters-store"
-  ],
+  "bitfictionMvcTemplate.model.User": [],
+  "bitfictionMvcTemplate.model.UserInfo": [],
   "bitfictionMvcTemplate.store.MenuStore": [
     "widget.menu-store"
   ],
-  "bitfictionMvcTemplate.store.MetodicsStore": [
-    "widget.metodics-store"
-  ],
-  "bitfictionMvcTemplate.store.NormativesStore": [
-    "widget.normatives-store"
-  ],
-  "bitfictionMvcTemplate.store.OtherAreas": [
-    "widget.other-areas-store"
-  ],
-  "bitfictionMvcTemplate.store.OtherRooms": [
-    "widget.other-rooms-store"
+  "bitfictionMvcTemplate.store.OneToManyEntity": [
+    "widget.oneToManyEntity-store"
   ],
   "bitfictionMvcTemplate.store.OneToOneEntity": [
-    "widget.school-data-store"
+    "widget.oneToOneEntity-store"
   ],
   "bitfictionMvcTemplate.store.OneToOneEntityEditableByAdmin": [
-    "widget.school-data-admin-store"
+    "widget.oneToOneEntityEditableByAdmin-store"
   ],
-  "bitfictionMvcTemplate.store.AggregatedEntitys": [
-    "widget.schoolinfos-store"
-  ],
-  "bitfictionMvcTemplate.store.Specializations": [
-    "widget.specializations-store"
-  ],
-  "bitfictionMvcTemplate.store.SpecializationsDefinitions": [
-    "widget.specializations-definitions-store"
-  ],
-  "bitfictionMvcTemplate.store.SpecializationsInfos": [
-    "widget.specializations-infos-store"
-  ],
-  "bitfictionMvcTemplate.store.StsoDocumentsStore": [
-    "widget.stso-documents-store"
-  ],
-  "bitfictionMvcTemplate.store.Teachers": [
-    "widget.teachers-store"
-  ],
-  "bitfictionMvcTemplate.store.TeachersStore": [
-    "widget.teachers-docs-store"
-  ],
-  "bitfictionMvcTemplate.store.proxy.CustomAjax": [
-    "proxy.customajax"
-  ],
-  "bitfictionMvcTemplate.view.BrowserCheck": [
-    "widget.browsercheck"
-  ],
-  "bitfictionMvcTemplate.view.DocumentationData": [
-    "widget.documentation-data-form"
-  ],
-  "bitfictionMvcTemplate.view.EconomicData": [
-    "widget.economic-data-form"
-  ],
-  "bitfictionMvcTemplate.view.EmployeesData": [
-    "widget.employees-data-form"
-  ],
-  "bitfictionMvcTemplate.view.EnergyData": [
-    "widget.energy-data-form"
-  ],
-  "bitfictionMvcTemplate.view.FileUploadForm": [
-    "widget.file-upload-form"
+  "bitfictionMvcTemplate.store.UserInfo": [
+    "widget.userInfo-store"
   ],
   "bitfictionMvcTemplate.view.Header": [
     "widget.app-header",
@@ -2000,74 +1882,20 @@ Ext.ClassManager.addNameAliasMappings({
   "bitfictionMvcTemplate.view.Menu": [
     "widget.app-menu"
   ],
-  "bitfictionMvcTemplate.view.OtherData": [
-    "widget.other-data-form"
-  ],
-  "bitfictionMvcTemplate.view.PersonData": [
-    "widget.person-data-form"
-  ],
-  "bitfictionMvcTemplate.view.RentData": [
-    "widget.rent-data-form"
-  ],
   "bitfictionMvcTemplate.view.OneToOneEntity": [
-    "widget.school-data-form"
+    "widget.oneToOneEntity-fieldcontainer"
   ],
   "bitfictionMvcTemplate.view.OneToOneEntityEditableByAdmin": [
-    "widget.school-data-admin-form"
-  ],
-  "bitfictionMvcTemplate.view.StudentsData": [
-    "widget.students-data-form"
-  ],
-  "bitfictionMvcTemplate.view.TechnicalData": [
-    "widget.technical-data-form"
+    "widget.oneToOneEntityEditableByAdmin-fieldcontainer"
   ],
   "bitfictionMvcTemplate.view.Viewport": [
     "widget.mainviewport"
   ],
-  "bitfictionMvcTemplate.view.combo.Cooperation": [
-    "widget.cooperation-combo"
+  "bitfictionMvcTemplate.view.grid.OneToManyEntityEditable": [
+    "widget.oneToManyEntity-editable"
   ],
-  "bitfictionMvcTemplate.view.combo.Qualification": [
-    "widget.qualification-combo"
-  ],
-  "bitfictionMvcTemplate.view.combo.Type": [
-    "widget.type-combo"
-  ],
-  "bitfictionMvcTemplate.view.grid.BuildingsEditable": [
-    "widget.buildings-editable"
-  ],
-  "bitfictionMvcTemplate.view.grid.Docs": [
-    "widget.docs-grid"
-  ],
-  "bitfictionMvcTemplate.view.grid.Documents": [
-    "widget.documents-grid"
-  ],
-  "bitfictionMvcTemplate.view.grid.OneToManyEntitysEditable": [
-    "widget.lecture-rooms-editable"
-  ],
-  "bitfictionMvcTemplate.view.grid.MastersEditable": [
-    "widget.masters-editable"
-  ],
-  "bitfictionMvcTemplate.view.grid.OtherAreasEditable": [
-    "widget.other-areas-editable"
-  ],
-  "bitfictionMvcTemplate.view.grid.OtherRoomsEditable": [
-    "widget.other-rooms-editable"
-  ],
-  "bitfictionMvcTemplate.view.grid.AggregatedEntitys": [
-    "widget.schoolinfos-grid"
-  ],
-  "bitfictionMvcTemplate.view.grid.SpecializationsDefinitions": [
-    "widget.specializations-definitions-grid"
-  ],
-  "bitfictionMvcTemplate.view.grid.SpecializationsEditable": [
-    "widget.specializations-editable"
-  ],
-  "bitfictionMvcTemplate.view.grid.SpecializationsInfos": [
-    "widget.specializations-infos-grid"
-  ],
-  "bitfictionMvcTemplate.view.grid.TeachersEditable": [
-    "widget.teachers-editable"
+  "bitfictionMvcTemplate.view.grid.UserInfo": [
+    "widget.userInfo-grid"
   ]
 });
 Ext.setVersion("ext-theme-base", "4.2.0.663");
