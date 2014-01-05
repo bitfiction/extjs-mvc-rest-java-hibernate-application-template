@@ -828,14 +828,17 @@ Ext.ClassManager.addNameAlternateMappings({
   "bitfictionMvcTemplate.Application": [],
   "bitfictionMvcTemplate.controller.Main": [],
   "bitfictionMvcTemplate.controller.Util": [],
+  "bitfictionMvcTemplate.model.BaseEntity": [],
   "bitfictionMvcTemplate.model.OneToManyEntity": [],
   "bitfictionMvcTemplate.model.OneToOneEntity": [],
   "bitfictionMvcTemplate.model.OneToOneEntityEditableByAdmin": [],
+  "bitfictionMvcTemplate.model.User": [],
+  "bitfictionMvcTemplate.model.UserInfo": [],
   "bitfictionMvcTemplate.store.MenuStore": [],
   "bitfictionMvcTemplate.store.OneToManyEntity": [],
   "bitfictionMvcTemplate.store.OneToOneEntity": [],
   "bitfictionMvcTemplate.store.OneToOneEntityEditableByAdmin": [],
-  "bitfictionMvcTemplate.view.BrowserCheck": [],
+  "bitfictionMvcTemplate.store.UserInfo": [],
   "bitfictionMvcTemplate.view.Header": [],
   "bitfictionMvcTemplate.view.HeaderBulk": [],
   "bitfictionMvcTemplate.view.LoginForm": [],
@@ -845,7 +848,8 @@ Ext.ClassManager.addNameAlternateMappings({
   "bitfictionMvcTemplate.view.OneToOneEntity": [],
   "bitfictionMvcTemplate.view.OneToOneEntityEditableByAdmin": [],
   "bitfictionMvcTemplate.view.Viewport": [],
-  "bitfictionMvcTemplate.view.grid.OneToManyEntityEditable": []
+  "bitfictionMvcTemplate.view.grid.OneToManyEntityEditable": [],
+  "bitfictionMvcTemplate.view.grid.UserInfo": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1836,9 +1840,12 @@ Ext.ClassManager.addNameAliasMappings({
   "bitfictionMvcTemplate.Application": [],
   "bitfictionMvcTemplate.controller.Main": [],
   "bitfictionMvcTemplate.controller.Util": [],
+  "bitfictionMvcTemplate.model.BaseEntity": [],
   "bitfictionMvcTemplate.model.OneToManyEntity": [],
   "bitfictionMvcTemplate.model.OneToOneEntity": [],
   "bitfictionMvcTemplate.model.OneToOneEntityEditableByAdmin": [],
+  "bitfictionMvcTemplate.model.User": [],
+  "bitfictionMvcTemplate.model.UserInfo": [],
   "bitfictionMvcTemplate.store.MenuStore": [
     "widget.menu-store"
   ],
@@ -1851,8 +1858,8 @@ Ext.ClassManager.addNameAliasMappings({
   "bitfictionMvcTemplate.store.OneToOneEntityEditableByAdmin": [
     "widget.oneToOneEntityEditableByAdmin-store"
   ],
-  "bitfictionMvcTemplate.view.BrowserCheck": [
-    "widget.browsercheck"
+  "bitfictionMvcTemplate.store.UserInfo": [
+    "widget.userInfo-store"
   ],
   "bitfictionMvcTemplate.view.Header": [
     "widget.app-header",
@@ -1876,16 +1883,19 @@ Ext.ClassManager.addNameAliasMappings({
     "widget.app-menu"
   ],
   "bitfictionMvcTemplate.view.OneToOneEntity": [
-    "widget.oneToOneEntity-form"
+    "widget.oneToOneEntity-fieldcontainer"
   ],
   "bitfictionMvcTemplate.view.OneToOneEntityEditableByAdmin": [
-    "widget.oneToOneEntityEditableByAdmin-form"
+    "widget.oneToOneEntityEditableByAdmin-fieldcontainer"
   ],
   "bitfictionMvcTemplate.view.Viewport": [
     "widget.mainviewport"
   ],
   "bitfictionMvcTemplate.view.grid.OneToManyEntityEditable": [
     "widget.oneToManyEntity-editable"
+  ],
+  "bitfictionMvcTemplate.view.grid.UserInfo": [
+    "widget.userInfo-grid"
   ]
 });
 Ext.setVersion("ext-theme-base", "4.2.0.663");
