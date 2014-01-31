@@ -225,5 +225,82 @@
 				</plugins>
 			</build>
 		</profile>
+		
+		<profile>
+			<id>local-development-build</id>
+			<properties>
+				<hibernate.method>create-drop</hibernate.method>
+				<hibernate.show_sql>true</hibernate.show_sql>
+			</properties>
+			<build>
+				<finalName>${project.name}</finalName>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-resources-plugin</artifactId>
+						<version>2.6</version>
+						<executions>
+							<execution>
+								<id>copy-resources</id>
+								<phase>process-resources</phase>
+								<goals>
+									<goal>copy-resources</goal>
+								</goals>
+								<configuration>
+									<outputDirectory>${project.build.directory}/jsbuild</outputDirectory>
+									<resources>
+										<resource>
+											<directory>${project.basedir}/src/main/webapp/build/production/bitfictionMvcTemplate</directory>
+											<includes>
+												<include>**/*</include>
+											</includes>
+										</resource>
+									</resources>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-war-plugin</artifactId>
+						<version>2.4</version>
+						<configuration>
+							<warSourceExcludes>
+								ext/**/*,
+								app/**/*,
+								sass/**/*,
+								*.js,
+								*.json,
+								*.css,
+								*.xml,
+								*.rb,
+								bootstrap.js
+							</warSourceExcludes>
+						</configuration>
+						<executions>
+							<execution>
+								<id>default-war</id>
+								<configuration>
+									<webResources>
+										<resource>
+											<directory>${project.build.directory}/jsbuild</directory>
+											<targetPath>/</targetPath>
+											<includes>
+												<include>**/*</include>
+											</includes>
+										</resource>
+									</webResources>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.jboss.as.plugins</groupId>
+						<artifactId>jboss-as-maven-plugin</artifactId>
+						<version>7.4.Final</version>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		
 	</profiles>
 </project>
