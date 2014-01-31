@@ -30,7 +30,7 @@ _Includes sample:_
 - _openshift cloud configuration with jboss AS 7.1 and mysql cartridge_
 
 _Based on technologies:_
-- _ExtJS 4.2.0_
+- _ExtJS 4.2.1_
 - _Java_
 - _Hibernate 4.2.0.Final_
 
