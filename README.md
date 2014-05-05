@@ -4,7 +4,7 @@ _RIA application template runnable on openshift._
 
 [Blog](http://www.bitfiction.com/blog/)
 
-[Code in action on openshift cloud](http://mvctemplate-bitfiction.rhcloud.com)
+[Code in action on openshift cloud](http://mvctemplate-endriju.rhcloud.com)
 
 _Example users_
 
